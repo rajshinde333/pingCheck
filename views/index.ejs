@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ping App</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="loginBox">
+      <h2>Ping App</h2>
+      <form action="/ping" method="POST" class="form">
+        <div class="lableInput">
+          <label for="host">IP/Url</label>
+          <input type="text" id="host" name="host" required />
+        </div>
+        <button class="submitBtn" type="submit">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </button>
+      </form>
+
+      <% if (result) { %>
+      <h4 class="result"><%= result %></h4>
+      <% } %>
+    </div>
+  </body>
+</html>
